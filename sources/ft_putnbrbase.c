@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbrbase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaires-b <aaires-b@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: anabelmonte <anabelmonte@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 18:19:10 by aaires-b          #+#    #+#             */
-/*   Updated: 2023/09/09 00:23:16 by aaires-b         ###   ########.fr       */
+/*   Updated: 2023/09/10 16:48:18 by anabelmonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbrbase(unsigned int nbr, char *base)
 {

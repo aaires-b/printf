@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaires-b <aaires-b@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: anabelmonte <anabelmonte@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 18:18:38 by aaires-b          #+#    #+#             */
-/*   Updated: 2023/09/09 00:17:54 by aaires-b         ###   ########.fr       */
+/*   Updated: 2023/09/10 16:48:14 by anabelmonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int nbr)
 {
@@ -19,15 +19,15 @@ int	ft_putnbr(int nbr)
 	size = 0;
 	if (nbr == -2147483648)
 	{
-		size = ft_putchar('-');
+		size += ft_putchar('-');
 		size += ft_putchar('2');
-		ft_putnbr(147483648);
+		size += ft_putnbr(147483648);
 	}
 	else if (nbr < 0)
 	{
 		size += ft_putchar('-');
 		nbr = -nbr;
-		ft_putnbr(nbr);
+		size += ft_putnbr(nbr);
 	}
 	else if (nbr > 9)
 	{

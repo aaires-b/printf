@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaires-b <aaires-b@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: anabelmonte <anabelmonte@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 18:19:36 by aaires-b          #+#    #+#             */
-/*   Updated: 2023/09/09 00:21:30 by aaires-b         ###   ########.fr       */
+/*   Updated: 2023/09/10 16:48:30 by anabelmonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putptr(unsigned long int ptr)
 {

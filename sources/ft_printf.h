@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaires-b <aaires-b@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: anabelmonte <anabelmonte@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 18:23:45 by aaires-b          #+#    #+#             */
-/*   Updated: 2023/09/09 00:19:13 by aaires-b         ###   ########.fr       */
+/*   Updated: 2023/09/10 16:51:25 by anabelmonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
-
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 # include <stdio.h>
 # include <unistd.h>
 # include <stdarg.h>
 
-int	ft_printf(char *str, ...);
-int	ft_format(va_list *argms, char *str, int i);
+int	ft_printf(const char *str, ...);
+int	ft_format(va_list *argms, const char *str, int i);
 int	ft_putnbrbase(unsigned int nbr, char *base);
 int	ft_putnbr(int nbr);
 int	ft_putstr(char *s);

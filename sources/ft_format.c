@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_format.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aaires-b <aaires-b@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: anabelmonte <anabelmonte@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 18:20:17 by aaires-b          #+#    #+#             */
-/*   Updated: 2023/09/09 00:21:00 by aaires-b         ###   ########.fr       */
+/*   Updated: 2023/09/10 16:50:32 by anabelmonte      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	ft_format(va_list *argms, char *str, int i)
+int	ft_format(va_list *argms, const char *str, int i)
 {
 	int		size;
 
@@ -22,10 +22,8 @@ int	ft_format(va_list *argms, char *str, int i)
 	else if (str[i] == 's')
 		size += ft_putstr(va_arg(*argms, char *));
 	else if (str[i] == 'p')
-		size += ft_putstr("Ox") + ft_putptr(va_arg(*argms, unsigned long int));
-	else if (str[i] == 'd')
-		size += ft_putnbr(va_arg(*argms, int));
-	else if (str[i] == 'i')
+		size += ft_putstr("0x") + ft_putptr(va_arg(*argms, unsigned long int));
+	else if (str[i] == 'd' || str[i] == 'i')
 		size += ft_putnbr(va_arg(*argms, int));
 	else if (str[i] == 'u')
 		size += ft_putnbrunsigned(va_arg(*argms, unsigned int));
@@ -34,6 +32,6 @@ int	ft_format(va_list *argms, char *str, int i)
 	else if (str[i] == 'X')
 		size += ft_putnbrbase(va_arg(*argms, int), "0123456789ABCDEF");
 	else if (str[i] == '%')
-		size += ft_putchar(va_arg(*argms, int));
+		size += ft_putchar('%');
 	return (size);
 }
