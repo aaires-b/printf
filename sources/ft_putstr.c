@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anabelmonte <anabelmonte@student.42.fr>    +#+  +:+       +#+        */
+/*   By: aaires-b <aaires-b@@student.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 18:17:52 by aaires-b          #+#    #+#             */
-/*   Updated: 2023/09/10 16:48:33 by anabelmonte      ###   ########.fr       */
+/*   Updated: 2023/09/16 19:55:37 by aaires-b         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_putstr(char *s)
 {
 	int	i;
-	
+
 	if (!s)
 	{
 		write(1, "(null)", 6);
