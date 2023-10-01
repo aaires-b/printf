@@ -12,8 +12,10 @@
 
 NAME	= libftprintf.a
 
-CFILES	= 	ft_printf.c ft_format.c ft_putchar.c ft_putnbr.c ft_putnbrbase.c \
-			ft_putnbrunsigned.c ft_putptr.c ft_putstr.c 
+CFILES	= 	sources/ft_printf.c sources/ft_format.c sources/ft_putchar.c \
+			sources/ft_putnbr.c sources/ft_putnbrbase.c \
+			sources/ft_putnbrunsigned.c sources/ft_putptr.c \
+			sources/ft_putstr.c
 					
 OFILES	= $(CFILES:.c=.o)
 
